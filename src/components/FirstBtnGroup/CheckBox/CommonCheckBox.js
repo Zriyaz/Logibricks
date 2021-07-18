@@ -19,10 +19,9 @@ const CommonCheckBox = () => {
 
   const classes = useStyles()
   const dispatch = useDispatch()
-  const [checked, setChecked] = React.useState(true);
 
   const handleChange1 = (event) => {
-     setChecked(event.target.checked);
+   
      if(event.target.checked){
       dispatch({
         type: 'CHANGE_COLOR',
@@ -36,7 +35,6 @@ const CommonCheckBox = () => {
      }
   };
   const handleChange2 = (event) => {
-    setChecked(event.target.checked);
     if(event.target.checked){
      dispatch({
        type: 'CHANGE_COLOR',
@@ -50,7 +48,6 @@ const CommonCheckBox = () => {
     }
  };
  const handleChange3 = (event) => {
-  setChecked(event.target.checked);
   if(event.target.checked){
    dispatch({
      type: 'CHANGE_COLOR',
