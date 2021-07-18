@@ -16,7 +16,6 @@ const CommonBtn = ({variant, border, handleColorChange, color,textColor,borderLi
       border: borderLine ? borderLine : ''
    },
  }));
- 
   const classes = useStyles()
     return (
        <Button onClick={()=>handleColorChange(colorCode)}  className={classes.commonBtn} variant={`${variant}`} style={ border ? {border: `${border}`} : {} }>

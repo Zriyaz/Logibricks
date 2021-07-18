@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import './App.css';
 import {ThemeProvider} from "@material-ui/styles"
-import {useDispatch, useSelector} from "react-redux"
-import theme from "./theme"
-import { AppBar,Toolbar,makeStyles } from '@material-ui/core';
+import {useSelector} from "react-redux"
+import { makeStyles } from '@material-ui/core';
 import FirstBtnGroup from './components/FirstBtnGroup';
 import CheckBox from './components/FirstBtnGroup/CheckBox';
 import SecondBtn from "./components/SecondBtn";
@@ -37,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function App() {
-  const [light, setLight] = React.useState(true);
   const {color} = useSelector(state => ({...state}))
   const {isActiveBgColor, BgColor} = color
   const classes = useStyles()

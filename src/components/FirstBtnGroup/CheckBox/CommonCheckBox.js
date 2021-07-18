@@ -2,7 +2,6 @@ import React from 'react'
 import Checkbox from '@material-ui/core/Checkbox';
 import { makeStyles } from '@material-ui/core/styles';
 import AddIcon from '@material-ui/icons/Add';
-import AdbIcon from '@material-ui/icons/Adb';
 import {useDispatch} from "react-redux"
 const CommonCheckBox = () => {
 
